@@ -17,7 +17,7 @@ const INSERT_POST_SQL = 'INSERT INTO BadgerComment(comment, created) VALUES (?, 
 const DELETE_POST_SQL = "DELETE FROM BadgerComment WHERE id = ?;"
 
 const db = await open({
-    filename: process.env['MINI_BADGERCHAT_DB_LOC'] ?? "./db.db",
+    filename: "./db.db",
     driver: sqlite3.Database
 });
 
